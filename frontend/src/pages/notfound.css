@@ -1,6 +1,3 @@
-/*======================
-  404 page
-=======================*/
 .page_404 {
   padding: 40px 0;
   background: #fff;
@@ -16,7 +13,7 @@
 }
 
 .four_zero_four_bg {
-  background-image: url(./anime.gif);
+  background-image: url(../assets/anime.gif);
   height: 400px;
   background-position: center;
   background-repeat: no-repeat;
@@ -36,7 +33,6 @@
   background: #39ac31;
   margin: 20px 0;
   display: inline-block;
-  text-decoration: none;
   border: 0;
   border-radius: 10px;
   cursor: pointer;
