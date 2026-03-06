@@ -1,28 +1,15 @@
-// import { StrictMode } from 'react'
-// import { createRoot } from 'react-dom/client'
-// import './index.css'
-// import App from './App.jsx'
-// import { RouterProvider } from 'react-router-dom'
-
-// createRoot(document.getElementById('root')).render(
-//   <StrictMode>
-//     <BrowserRouter>
-//       <App />
-//     </BrowserRouter>
-//     <RouterProvider router={router} />
-//   </StrictMode>,
-// )
-
-
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
-import App from "./App.jsx";
+import "./index.css";
+
+import { RouterProvider } from "react-router-dom";
+import router from "./router.jsx"; // adjust path if your file name is different
+import { ContextProvider } from "./context/ContextProvider.jsx";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>
+    <ContextProvider>
+      <RouterProvider router={router} />
+    </ContextProvider>
+  </React.StrictMode>,
 );
